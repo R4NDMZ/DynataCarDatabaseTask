@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driverClass: org.postgresql.Driver
+    url: ${SPRING_DATASOURCE}
+    username: ${POSTGRES_DB_MASTER_USERNAME}
+    password: ${POSTGRES_DB_MASTER_PASSWORD}
+  flyway:
+    baselineOnMigrate: true
+    enabled: true
+    validate-on-migrate: true
+    schemas: public
